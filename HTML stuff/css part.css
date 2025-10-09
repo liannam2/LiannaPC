@@ -1,0 +1,282 @@
+/* RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(180deg, #e9f3ff, #fffdf5);
+  color: #222;
+  line-height: 1.6;
+}
+
+/* NAVIGATION SECTION*/
+nav {
+  background: linear-gradient(90deg, #ff5e00, #ff9f43);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  position: sticky; /* keep this at the top of the page at all times*/
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: white;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+  color: #fffdf5;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* HEADER SECTION*/
+.banner {
+  background-image: url("https://ws.engr.illinois.edu/images/grainger-default-thumb.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.intro {
+  text-align: center;
+  padding: 30px 15px;
+  background: linear-gradient(90deg, #f7f7f7, #e3f2ff);
+  border-bottom: 4px solid #ff5e00;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  color: #222;
+  transition: all 0.3s ease-in-out;
+}
+
+.intro h1:hover {
+  color: #ff5e00;
+  text-shadow: 0 0 10px rgba(255, 94, 0, 0.5);
+  transform: scale(1.05);
+}
+
+.intro h3 {
+  font-weight: 500;
+  color: #333;
+}
+
+.intro a {
+  color: #0066cc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.intro a:hover {
+  color: #ff5e00;
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 0 20px 50px;
+}
+
+/* SECTION HEADERS */
+h2 {
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #ff5e00;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+h2:hover {
+  color: #ff5e00;
+  transform: scale(1.05);
+}
+
+/* ABOUT SECTION */
+#about {
+  text-align: center;
+  background: linear-gradient(145deg, #fff, #e8f4ff);
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+  display: block;
+  margin: 25px auto;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 119, 255, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.08) rotate(2deg);
+  box-shadow: 0 0 30px rgba(255, 94, 0, 0.7);
+}
+
+/* PROJECTS SECTION*/
+.project {
+  background: white;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 6px solid #ff5e00;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(255, 94, 0, 0.3);
+  background: linear-gradient(145deg, #fff7f0, #ffffff);
+}
+
+.project h3 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+/* CONTACT SECTION*/
+#contact {
+  background: linear-gradient(135deg, #004aad, #5ac8fa);
+  color: white;
+  padding: 70px 20px;
+  text-align: center;
+  border-top: 4px solid #002b7a;
+}
+
+#contact h2 {
+  color: #ffeb3b;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 420px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 35px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+form:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(255, 235, 59, 0.4);
+}
+
+form label {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  text-align: left;
+  width: 100%;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 7px;
+  outline: none;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  box-shadow: 0 0 10px #ffeb3b;
+  transform: scale(1.02);
+}
+
+button {
+  margin-top: 25px;
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #ffeb3b, #fff176);
+  border: none;
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  cursor: pointer;
+  color: #004aad;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+button:hover {
+  background: white;
+  color: #004aad;
+  transform: scale(1.08);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.6);
+}
+
+/* FOOTER SECTION*/
+footer {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(90deg, #ff5e00, #ff9f43);
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* TRANSITIONS*/
+section {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}

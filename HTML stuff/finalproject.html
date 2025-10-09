@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lianna's Filipino Restaurant</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Lianna's Filipino Restaurant</h1>
+      <img src="https://assets3.thrillist.com/v1/image/3015827/1200x600/scale;;webp=auto;jpeg_quality=85.jpg" 
+           alt="Table of Filipino Food Dishes" id="header-img" width="500">
+    </header>
+    
+    <br/>
+      <hr style="width:95%"> 
+    <br/>
+      
+    <nav>
+      <h4>Links to the menu and the order form:</h4>
+      <h2><a href="#menu">Menu</a></h2>
+      <h2><a href="#order-form">Order Form</a></h2>
+    </nav>
+    
+    <br/>
+      <hr style="width:95%">
+      <br/>
+
+    <main>
+      
+      <section id="menu">
+        <h2>Menu</h2>
+        <article>
+          <img src="https://static01.nyt.com/images/2023/12/15/multimedia/ND-Lumpia-lhfz/ND-Lumpia-lhfz-threeByTwoLargeAt2X.jpg"
+               alt="Picture of Lumpia Shanghai" width="200">
+          <h3>Lumpia Shanghai</h3>
+          <p><i>Crispy Filipino spring rolls </i>filled with seasoned ground pork, carrots, and onions, perfectly fried to golden brown.</p>
+          <h3 style="color:red;">Price: $8.99</h3>
+        </article>
+        
+        <article>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Pancit_Ilonggo_Style_-_12110747826.jpg/1200px-Pancit_Ilonggo_Style_-_12110747826.jpg"
+               alt="Picture of Pancit" width="200">
+          <h3>Pancit</h3>
+          <p><i>Classic Filipino stir-fried noodles</i> with chicken, shrimp, and fresh vegetables, seasoned with soy sauce and citrus for a savory, comforting flavor.</p>
+          <h3 style="color:red;">Price: $10.99</h3>
+        </article>
+        
+        <article>
+          <img src="https://www.thespruceeats.com/thmb/bqq_P7YZtu4Br9kPHqVkjib1QhQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/halo-halo-5409582-step-08-18bca395e05542539cf4eb2e87fd6882.jpg"
+               alt="Picture of Halo-Halo" width="200">
+          <h3>Halo-Halo</h3>
+          <p><i>A colorful Filipino dessert</i> made with shaved ice, sweetened fruits, jellies, beans, and creamy leche flan, topped with ube ice cream.</p>
+          <h3 style="color:red;">Price: $6.99</h3>
+        </article>
+      </section>
+      
+      <br/>
+      <hr style="width:95%">
+      <br/>
+      
+      
+      <section id="order-form">
+        <h2>Place Your Order</h2>
+        <form>
+            <input type="checkbox" id="lumpia" name="menu-item" value="Lumpia Shanghai">
+            <label for="lumpia">Lumpia Shanghai</label>
+            <input type="checkbox" id="pancit" name="menu-item" value="Pancit">
+            <label for="pancit">Pancit</label>
+            <input type="checkbox" id="halo-halo" name="menu-item" value="Halo-Halo">
+            <label for="halo-halo">Halo-Halo</label>
+            <br><br>
+            
+            <label for="qty-lumpia">Quantity of Lumpia Shanghai:</label>
+            <input type="number" id="qty-lumpia" name="qty-lumpia" min="0">
+
+            <label for="qty-pancit">Quantity of Pancit:</label>
+            <input type="number" id="qty-pancit" name="qty-pancit" min="0">
+
+            <label for="qty-halo">Quantity of Halo-Halo:</label>
+            <input type="number" id="qty-halo" name="qty-halo" min="0">
+
+            <br><br>
+            
+            Additional sides to add to the order:
+            <input type="checkbox" id="white-rice" name="sides" value="White Rice">
+            <label for="white-rice">White Rice</label>
+            <input type="checkbox" id="brown-rice" name="sides" value="Brown Rice">
+            <label for="brown-rice">Brown Rice</label>
+            <input type="checkbox" id="pork-broth" name="sides" value="Pork Broth">
+            <label for="pork-broth">Pork Broth</label>
+            <br><br>
+            <textarea name="special-requests" placeholder="Let us know about any special requests!" maxlength="100"></textarea>
+            <br><br>
+            <input type="submit" id="submit" value="Go to Checkout">
+        </form>
+      </section>
+    </main>
+
+    <footer>
+        <p> Made with love by @liannamateski ❤️ </p>
+    </footer>
+  </body>
+</html>
